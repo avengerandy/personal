@@ -1,0 +1,16 @@
+.footer {
+    margin-top: 3%;
+    background-color: black;
+}
+
+.footer img {
+    width: 30%;
+}
+
+.footer .col {
+    border-left: 1px solid #FFFFFF;
+}
+
+.footer a {
+    color: #FFFFFF;
+}

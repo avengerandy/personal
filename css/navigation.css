@@ -1,0 +1,73 @@
+.navigation {
+    background-color: rgba(55, 55, 51, 1);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 100%;
+    z-index: 9;
+    overflow-y: auto;
+    transition: all .2s ease-in-out;
+}
+
+.navigation img {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50%; 
+}
+
+.navigation .col-sm-12 {
+    margin-bottom: 10%;
+}
+
+.navigation a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navigationOpen {
+    right: 0px;
+    transition: all .2s ease-in-out;
+}
+
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding: 1em;
+    width: 70px;
+    z-index: 10;
+    transition: all .2s ease-in-out;
+}
+
+.navigation-icon:after, 
+.navigation-icon:before, 
+.navigation-icon div {
+    background-color: #FFFFFF;
+    -o-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    content: "";
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+}
+
+.navigation-icon-x {
+    right: 0px;
+    transition: all .2s ease-in-out;
+}
+
+.navigation-icon-x:before {
+    transform: translateY(12px) rotate(135deg);
+}
+
+.navigation-icon-x:after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+
+.navigation-icon-x div {
+    transform: scale(0);
+}
