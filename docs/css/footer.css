@@ -14,3 +14,7 @@
 .footer a {
     color: #FFFFFF;
 }
+
+.footer blockquote {
+    margin: 1rem;
+}

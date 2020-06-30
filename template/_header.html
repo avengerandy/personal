@@ -1,3 +1,4 @@
+{{define "_header"}}
 <!doctype html>
 <html lang="en">
     <head>
@@ -15,7 +16,7 @@
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/public.css">
         <script src="./js/navigation.js"></script>
-        <title>Home</title>
+        <title>{{.siteName}}</title>
     </head>
     <body>
         <!--navigation menu-->
@@ -83,32 +84,4 @@
                 </div>
             </div>
         </div>
-
-        {{.content}}
-
-        <!--footer-->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-lg-6 d-none d-md-block align-self-center">
-                        <img src="./img/logo.png">
-                    </div>
-                    <div class="col align-self-center">
-                        <blockquote class="blockquote">
-                            E-mail：mazer0701@gmail.com <br>
-                            GitHub：
-                            <a href="https://github.com/avengerandy" target="_blank">
-                                https://github.com/avengerandy
-                            </a>
-                            <br>
-                            Blog：
-                            <a href="http://andy850701.pixnet.net/blog" target="_blank">
-                                http://andy850701.pixnet.net/blog
-                            </a>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+{{end}}

@@ -2,51 +2,38 @@ package main
 
 import (
 	"html/template"
-	"io/ioutil"
 	"log"
 	"os"
 )
 
 func main() {
-	mainTemplate, err := template.ParseFiles("./template/main.html")
+
+	tmpl, err := template.ParseGlob("./template/*.html")
 	if err != nil {
-		log.Print(err)
-		return
+		log.Fatal("Error loading templates: " + err.Error())
 	}
-	indexTemplateFile, err := ioutil.ReadFile("./template/index.html")
-	if err != nil {
-		log.Print(err)
-		return
-	}
+
 	indexFile, err := os.Create("./docs/index.html")
 	defer indexFile.Close()
 	if err != nil {
-		log.Print(err)
-		return
-	}
-	aboutTemplateFile, err := ioutil.ReadFile("./template/about.html")
-	if err != nil {
-		log.Print(err)
-		return
+		log.Fatal("Error create output index: " + err.Error())
 	}
 	aboutFile, err := os.Create("./docs/about.html")
 	defer aboutFile.Close()
 	if err != nil {
-		log.Print(err)
-		return
+		log.Fatal("Error create output about: " + err.Error())
 	}
-	err = mainTemplate.Execute(indexFile, map[string]template.HTML{
-		"content": template.HTML(string(indexTemplateFile)),
+
+	err = tmpl.ExecuteTemplate(indexFile, "index.html", map[string]string{
+		"siteName": "Index",
 	})
 	if err != nil {
-		log.Print(err)
-		return
+		log.Fatal("Error write output index: " + err.Error())
 	}
-	err = mainTemplate.Execute(aboutFile, map[string]template.HTML{
-		"content": template.HTML(string(aboutTemplateFile)),
+	err = tmpl.ExecuteTemplate(aboutFile, "about.html", map[string]string{
+		"siteName": "About",
 	})
 	if err != nil {
-		log.Print(err)
-		return
+		log.Fatal("Error write output about: " + err.Error())
 	}
 }
