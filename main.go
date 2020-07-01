@@ -1,39 +1,27 @@
 package main
 
 import (
+	"github.com/avengerandy/personal/handler"
 	"html/template"
 	"log"
-	"os"
 )
 
 func main() {
+
+	pages := map[string]handler.Handler{
+		"Index": &handler.IndexHandler{},
+		"About": &handler.AboutHandler{},
+	}
 
 	tmpl, err := template.ParseGlob("./template/*.html")
 	if err != nil {
 		log.Fatal("Error loading templates: " + err.Error())
 	}
 
-	indexFile, err := os.Create("./docs/index.html")
-	defer indexFile.Close()
-	if err != nil {
-		log.Fatal("Error create output index: " + err.Error())
-	}
-	aboutFile, err := os.Create("./docs/about.html")
-	defer aboutFile.Close()
-	if err != nil {
-		log.Fatal("Error create output about: " + err.Error())
-	}
-
-	err = tmpl.ExecuteTemplate(indexFile, "index.html", map[string]string{
-		"siteName": "Index",
-	})
-	if err != nil {
-		log.Fatal("Error write output index: " + err.Error())
-	}
-	err = tmpl.ExecuteTemplate(aboutFile, "about.html", map[string]string{
-		"siteName": "About",
-	})
-	if err != nil {
-		log.Fatal("Error write output about: " + err.Error())
+	for _, value := range pages {
+		err := value.HandleTemplate(tmpl)
+		if err != nil {
+			log.Fatal(err.Error())
+		}
 	}
 }
