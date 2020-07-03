@@ -1,0 +1,8 @@
+{
+    "SiteName": "About",
+    "Autobiography": [
+        "My name is Ting-Yu (Mazer), a master student in Computer Science.",
+        "\r\nFor the experience of work. I was start working as a programmer when I was junior. Mainly focused on the web backend and android app. <br>\r\nMy first job is about Wi-Fi service.\r\nThe main concept is to use PHP as a middleware try to implementation business logic\r\nbetween radius AAA server and Wi-Fi hotspots.\r\n(e.g. interact with advertisement API and control user permission). <br>\r\nMy second job is in a software outsourcing company.\r\nMainly in charge of crawler and design common website.\r\n(e.g. official website、blog and online shopping website). <br>\r\nBesides above, I also work on a piecework basis on my free time.\r\n        ",
+        "\r\nFor the experience of research.\r\nI'm interests include Evolutionary Computation、Convolutional Neural Networks and Reinforcement Learning. <br>\r\nMy main research field is Evolutionary Computation specialized in real-code optimization.\r\nFor the related research results,\r\nI was publishing a conference paper on 2019 IEEE Congress on Evolutionary Computation as a second author\r\nwhen I was first year of graduate school. <br>\r\nBesides above, I also try to understanding and implementation other field in my free time.\r\nFor example, I have been trying Convolutional Neural Networks in image classification and\r\nusing Reinforcement Learning on Automated Machine Learning.\r\n        "
+    ]
+}

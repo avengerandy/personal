@@ -13,18 +13,11 @@
     <div class="row padding-block">
         <div class="col-12">
             <div class="text-center"><h2>Autobiography</h2></div>
+            {{range .Autobiography}}
             <blockquote class="blockquote">
-                My name is Ting-Yu, a master student in Computer Science.
+                {{.}}
             </blockquote>
-            <blockquote class="blockquote">
-                For the experience of work.
-                I was start working as a programmer when I was junior.
-                Mainly focused on the web backend and android app.
-            </blockquote>
-            <blockquote class="blockquote">
-                For the experience of research.
-                I'm interests include Evolutionary Computation、Convolutional Neural Networks and Reinforcement Learning.
-            </blockquote>
+            {{end}}
         </div>
     </div>
     <hr>

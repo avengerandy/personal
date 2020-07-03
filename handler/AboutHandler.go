@@ -1,11 +1,18 @@
 package handler
 
 import (
+	"encoding/json"
 	"html/template"
+	"io/ioutil"
 	"os"
 )
 
-type AboutHandler struct{}
+type AboutHandler struct {
+	templateData struct {
+		SiteName      string
+		Autobiography []template.HTML
+	}
+}
 
 func (handler *AboutHandler) HandleTemplate(tmpl *template.Template) error {
 	aboutFile, err := os.Create("./docs/about.html")
@@ -13,9 +20,14 @@ func (handler *AboutHandler) HandleTemplate(tmpl *template.Template) error {
 	if err != nil {
 		return err
 	}
-	err = tmpl.ExecuteTemplate(aboutFile, "about.html", map[string]string{
-		"siteName": "About",
-	})
+
+	data, err := ioutil.ReadFile("./setting/about.json")
+	if err != nil {
+		return err
+	}
+	json.Unmarshal(data, &handler.templateData)
+
+	err = tmpl.ExecuteTemplate(aboutFile, "about.html", handler.templateData)
 	if err != nil {
 		return err
 	}
