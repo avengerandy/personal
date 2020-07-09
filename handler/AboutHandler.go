@@ -9,8 +9,9 @@ import (
 
 type AboutHandler struct {
 	templateData struct {
-		SiteName      string
-		Autobiography []template.HTML
+		SiteName            string
+		RecentAutobiography []template.HTML
+		PastAutobiography   []template.HTML
 	}
 }
 
