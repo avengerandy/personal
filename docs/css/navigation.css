@@ -4,7 +4,7 @@
     top: 0px;
     bottom: 0px;
     right: 100%;
-    z-index: 9;
+    z-index: 20;
     overflow-y: auto;
     transition: all .2s ease-in-out;
 }
@@ -12,7 +12,7 @@
 .navigation img {
     margin-top: 10%;
     margin-bottom: 10%;
-    width: 50%; 
+    width: 50%;
 }
 
 .navigation .col-sm-12 {
@@ -35,12 +35,12 @@
     right: 0px;
     padding: 1em;
     width: 70px;
-    z-index: 10;
+    z-index: 25;
     transition: all .2s ease-in-out;
 }
 
-.navigation-icon:after, 
-.navigation-icon:before, 
+.navigation-icon:after,
+.navigation-icon:before,
 .navigation-icon div {
     background-color: #FFFFFF;
     -o-border-radius: 3px;
