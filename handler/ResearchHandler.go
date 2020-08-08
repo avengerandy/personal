@@ -10,6 +10,10 @@ import (
 type ResearchHandler struct {
 	templateData struct {
 		SiteName string
+		Title    string
+		ImageSet []string
+		Content  string
+		Note     template.HTML
 	}
 }
 

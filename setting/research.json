@@ -1,3 +1,11 @@
 {
-    "SiteName": "Research"
+    "SiteName": "Research",
+    "Title": "CNN",
+    "ImageSet": [
+        "./img/project (3).jpg",
+        "./img/index.jpg",
+        "./img/square.jpg"
+    ],
+    "Content": "123456 test",
+    "Note": "<a href=\"#\">test link</a>"
 }

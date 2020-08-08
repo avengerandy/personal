@@ -10,7 +10,7 @@
     <div class="row padding-block">
         <div class="col-12">
             <div class="text-center">
-                <h2>CNN</h2>
+                <h2>{{.Title}}</h2>
             </div>
         </div>
     </div>
@@ -18,20 +18,20 @@
         <div class="col-12">
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
+                    {{range $index, $link := .ImageSet}}
+                    <li
+                        data-target="#carousel"
+                        data-slide-to="{{$index}}"
+                        {{if eq $index 0}}class="active"{{end}}>
+                    </li>
+                    {{end}}
                 </ol>
                 <div class="carousel-inner text-center">
-                    <div class="carousel-item active">
-                        <img src="./img/project (3).jpg" alt="...">
+                    {{range $index, $link := .ImageSet}}
+                    <div class="carousel-item {{if eq $index 0}}active{{end}}">
+                        <img src="{{$link}}" alt="{{$link}}">
                     </div>
-                    <div class="carousel-item">
-                        <img src="./img/index.jpg" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/square.jpg" alt="...">
-                    </div>
+                    {{end}}
                 </div>
                 <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -47,7 +47,12 @@
     <div class="row padding-block">
         <div class="col-12">
             <blockquote class="blockquote">
-                1234 test
+                {{.Content}}
+            </blockquote>
+        </div>
+        <div class="col-12">
+            <blockquote class="blockquote">
+                {{.Note}}
             </blockquote>
         </div>
     </div>
