@@ -30,7 +30,7 @@
 }
 
 .navigation-icon {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0px;
     padding: 1em;
