@@ -1,0 +1,18 @@
+{
+    "projects": [
+        {
+            "id": "search",
+            "SiteName": "project - 巴哈姆特站內搜尋",
+            "Title": "巴哈姆特電玩資訊站各大服務站內搜尋系統設計",
+            "ImageSet": [
+                "./img/project/forum_search.png",
+                "./img/project/board_search.png",
+                "./img/project/anime_search.png",
+                "./img/project/acg_search.png",
+                "./img/project/gnn_search.png"
+            ],
+            "Content": "使用 Elasticsearch 根據各大服務負責人的搜尋需求規劃相對應的 index、analyzer、query DSL、ranking function，",
+            "Note": "<a href=\"#\">test link</a>"
+        }
+    ]
+}

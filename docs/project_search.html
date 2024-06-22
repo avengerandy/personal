@@ -27,7 +27,7 @@
             crossorigin="anonymous">
         </script>
         <script src="./js/navigation.js"></script>
-        <title>About</title>
+        <title>project - 巴哈姆特站內搜尋</title>
     </head>
     <body>
         
@@ -86,66 +86,100 @@
         </div>
 
 
+<style>
+    #carousel img {
+        max-height: 1000px;
+        max-width: 100%;
+    }
+</style>
 <div class="container">
     <div class="row padding-block">
-        <div class="col-6 offset-3 col-md-4 offset-md-4">
-            <img class="square" src="./img/headshot.png"/>
+        <div class="col-12">
+            <div class="text-center">
+                <h2>巴哈姆特電玩資訊站各大服務站內搜尋系統設計</h2>
+            </div>
         </div>
     </div>
-
-    
     <div class="row padding-block">
         <div class="col-12">
-            <div class="text-center"><h2>Recent</h2></div>
-            
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    
+                    <li
+                        data-target="#carousel"
+                        data-slide-to="0"
+                        class="active">
+                    </li>
+                    
+                    <li
+                        data-target="#carousel"
+                        data-slide-to="1"
+                        >
+                    </li>
+                    
+                    <li
+                        data-target="#carousel"
+                        data-slide-to="2"
+                        >
+                    </li>
+                    
+                    <li
+                        data-target="#carousel"
+                        data-slide-to="3"
+                        >
+                    </li>
+                    
+                    <li
+                        data-target="#carousel"
+                        data-slide-to="4"
+                        >
+                    </li>
+                    
+                </ol>
+                <div class="carousel-inner text-center">
+                    
+                    <div class="carousel-item active">
+                        <img src="./img/project/forum_search.png" alt="./img/project/forum_search.png">
+                    </div>
+                    
+                    <div class="carousel-item ">
+                        <img src="./img/project/board_search.png" alt="./img/project/board_search.png">
+                    </div>
+                    
+                    <div class="carousel-item ">
+                        <img src="./img/project/anime_search.png" alt="./img/project/anime_search.png">
+                    </div>
+                    
+                    <div class="carousel-item ">
+                        <img src="./img/project/acg_search.png" alt="./img/project/acg_search.png">
+                    </div>
+                    
+                    <div class="carousel-item ">
+                        <img src="./img/project/gnn_search.png" alt="./img/project/gnn_search.png">
+                    </div>
+                    
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row padding-block">
+        <div class="col-12">
             <blockquote class="blockquote">
-                &emsp;&emsp;我是 mazer。上一份工作主要負責社群網站、站內搜尋、推薦系統，有一年以上的全職兼職遠端經驗。根據公司的當前的人力配置，日常維護、新產品開發、舊產品優化、新技術研究等，皆在我的工作範疇中。
+                使用 Elasticsearch 根據各大服務負責人的搜尋需求規劃相對應的 index、analyzer、query DSL、ranking function，
             </blockquote>
-            
-            <blockquote class="blockquote">
-                &emsp;&emsp;技能上，除了具備維護大型社群網站必要的 SEO、商業邏輯實現、基本網頁安全、資料庫語法優化、版本控管外。我也研究 Evolutionary Computation、Recommendation System、Information Retrieval 等領域，經手過的站內搜尋類型以中文為主、數據大小從數百至數千萬、內容包括新聞、論壇文章、專有名詞等。
-            </blockquote>
-            
-            <blockquote class="blockquote">
-                &emsp;&emsp;工作上，我樂於交流與分享技術。對外，我負責過多起與外部機構合作的演算法、數據分析相關合作案；對內，我曾是演算法讀書會發起人，帶領公司其他工程師一起在工作之餘精進自己。在此之上，我也時常向非工程人員解釋程式內部運作的原理並藉由提問嘗試釐清對方想要達成的目標，使專案的討論盡可能建立在雙方擁有共同知識量的前提上。
-            </blockquote>
-            
-            <blockquote class="blockquote">
-                &emsp;&emsp;四年半期間，我負責後端網頁工程之外也積極在公司內引入演算法相關技術，完成網頁後端相關主線的同時，在公司內舉辦超過五場技術講座、與台灣大學社團產學合作、帶領組員作為講者與聽眾積極參與外部社群，最後由於職涯發展與公司方向不同，離開前任公司。
-            </blockquote>
-            
         </div>
         <div class="col-12">
-            <div class="text-center"><h2>Past</h2></div>
-            
             <blockquote class="blockquote">
-                我在大三時開始第一份工作，是關於公共場域 Wi-Fi，主要概念是使用 PHP 作為中間件，在 radius AAA server 和 Wi-Fi hotspots 之間加入業務邏輯（例如與廣告 API 串接或控制用戶權限等）。
+                <a href="#">test link</a>
             </blockquote>
-            
-            <blockquote class="blockquote">
-                後來期許自己能接觸更多種類的程式而在外包公司任職，主要負責爬蟲和設計常見的通用網站（例如官方網站、部落格、購物網站等）。同時在閒暇之餘我也接過 Unity 與 APP 的外包。
-            </blockquote>
-            
-            <blockquote class="blockquote">
-                學業上，我在大學專題任職隊長並實作演算法解決光學問題，其題目為 "利用最佳化演算法求解繞射光學投影系統中的繞射問題"，並且在半工半讀之下依舊取得良好成績並作為系畢業代表出席畢業典禮。
-            </blockquote>
-            
-            <blockquote class="blockquote">
-                研究所期間我專注於最佳化演算法中的 Evolutionary Computation，相關研究成果首先以第二作者的名義在 2019 IEEE Congress on Evolutionary Computation 發表論文，半年後以第一作者的名義在 2019 International Conference on Technologies and Applications of Artificial Intelligence 發表論文並親自於會議當天報告成果。
-            </blockquote>
-            
-            <blockquote class="blockquote">
-                除了自己主要的研究外我也以實作為目標嘗試其他演算法，分別在不同的期末專題中使用 CNN 解決 image classification 以及 Chorus detect 問題，在影像跟聲音的辨識上都有涉獵。同時我也曾經研究過 Reinforcement Learning 結合 Evolutionary Computation 的相關技術。
-            </blockquote>
-            
-            <blockquote class="blockquote">
-                碩二上，我由於家庭與經濟因素而休學，計畫趕不上變化，無法完成學業固然可惜，但是我相信以上的這些成果已經足以證明我的研究能力，同時也達到我當初就讀的初衷，能夠理解、實作、改善演算法。
-            </blockquote>
-            
-            <blockquote class="blockquote">
-                休學後，在過往多方向嘗試各領域的經驗之下，我決定專注於後端並且期許自己能夠實作出更加優秀的程式，因而任職於有長遠歷史產品的前任公司。
-            </blockquote>
-            
         </div>
     </div>
 </div>
