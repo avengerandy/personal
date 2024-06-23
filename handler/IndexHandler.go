@@ -7,6 +7,12 @@ import (
 	"os"
 )
 
+type IndexSkill struct {
+	Title   string
+	Image   string
+	Content template.HTML
+}
+
 type IndexProject struct {
 	Id      string
 	Title   string
@@ -19,6 +25,7 @@ type IndexHandler struct {
 		SiteName      string
 		Autobiography []template.HTML
 		Projects      []IndexProject
+		Skills        []IndexSkill
 	}
 }
 

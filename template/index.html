@@ -98,35 +98,18 @@
         <div class="col-12">
             <div class="text-center"><h2>Skill</h2></div>
         </div>
-        <div class="col-6 col-md-3 project">
-            <img class="img-fluid square" src="./img/s.gif"/>
+        {{range $Skill := .Skills}}
+        <div class="col-6 col-md-2 project">
+            <img class="img-fluid" src="{{$Skill.Image}}"/>
             <div class="hover-div justify-content-center">
-                <div class="text-center"><h4>Riko</h4></div>
+                <div class="text-center">
+                    <h4>{{$Skill.Title}}</h4>
+                    <p>{{$Skill.Content}}</p>
+                </div>
             </div>
         </div>
-        <div class="col-6 col-md-3 project">
-            <img class="img-fluid square" src="./img/s.gif"/>
-            <div class="hover-div justify-content-center">
-                <div class="text-center"><h4>Riko</h4></div>
-            </div>
-        </div>
-        <div class="col-6 col-md-3 project">
-            <img class="img-fluid square" src="./img/s.gif"/>
-            <div class="hover-div justify-content-center">
-                <div class="text-center"><h4>Riko</h4></div>
-            </div>
-        </div>
-        <div class="col-6 col-md-3 project">
-            <img class="img-fluid square" src="./img/s.gif"/>
-            <div class="hover-div justify-content-center">
-                <div class="text-center"><h4>Riko</h4></div>
-            </div>
-        </div>
+        {{end}}
     </div>
-    <div class="d-flex align-items-center">
-        <hr class="flex-grow-1">
-        <div class="text-center more-button flex-grow-0"></div>
-        <hr class="flex-grow-1">
-    </div>
+    <hr>
 </div>
 {{template "_footer" .}}

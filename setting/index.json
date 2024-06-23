@@ -30,5 +30,37 @@
             "Image": "./img/project/guild_06.png",
             "Content": "巴哈姆特電玩資訊站<br>公會社群 2.0 設計"
         }
+    ],
+    "Skills": [
+        {
+            "Title": "PHP",
+            "Image": "./img/Skill/PHP_logo.svg",
+            "Content": "網頁後端工程"
+        },
+        {
+            "Title": "HTML、CSS、JS",
+            "Image": "./img/Skill/ECMA_logo.png",
+            "Content": "網頁前端工程"
+        },
+        {
+            "Title": "Python",
+            "Image": "./img/Skill/python_logo.svg",
+            "Content": "演算法研究"
+        },
+        {
+            "Title": "Elasticsearch",
+            "Image": "./img/Skill/ES_logo.svg",
+            "Content": "站內搜尋引擎"
+        },
+        {
+            "Title": "MySQL",
+            "Image": "./img/Skill/mysql_logo.png",
+            "Content": "關聯式資料庫"
+        },
+        {
+            "Title": "Git",
+            "Image": "./img/Skill/Git_logo.svg",
+            "Content": "版本控管"
+        }
     ]
 }
