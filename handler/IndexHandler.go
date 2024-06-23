@@ -7,10 +7,18 @@ import (
 	"os"
 )
 
+type IndexProject struct {
+	Id      string
+	Title   string
+	Image   string
+	Content template.HTML
+}
+
 type IndexHandler struct {
 	templateData struct {
 		SiteName      string
 		Autobiography []template.HTML
+		Projects      []IndexProject
 	}
 }
 

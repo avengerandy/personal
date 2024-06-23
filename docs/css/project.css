@@ -3,6 +3,14 @@
     position: relative;
 }
 
+.project h4 {
+    color: #FFFFFF;
+}
+
+.project p {
+    color: #FFFFFF;
+}
+
 .project .hover-div {
     transition: .5s ease;
     opacity: 0;

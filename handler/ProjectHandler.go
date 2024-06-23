@@ -12,7 +12,7 @@ type Project struct {
 	SiteName string
 	Title    string
 	ImageSet []string
-	Content  string
+	Content  []string
 	Note     template.HTML
 }
 

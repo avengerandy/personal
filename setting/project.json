@@ -1,7 +1,7 @@
 {
-    "projects": [
+    "Projects": [
         {
-            "id": "search",
+            "Id": "search",
             "SiteName": "project - 巴哈姆特站內搜尋",
             "Title": "巴哈姆特電玩資訊站各大服務站內搜尋系統設計",
             "ImageSet": [
@@ -11,8 +11,74 @@
                 "./img/project/acg_search.png",
                 "./img/project/gnn_search.png"
             ],
-            "Content": "使用 Elasticsearch 根據各大服務負責人的搜尋需求規劃相對應的 index、analyzer、query DSL、ranking function，",
-            "Note": "<a href=\"#\">test link</a>"
+            "Content": [
+                "＊使用 Elasticsearch 根據各大服務負責人的搜尋需求規劃相對應的 index、analyzer、query DSL、ranking function。",
+                "＊技術包括同義詞、模糊搜尋、autocomplete、aggregation、多 index 搜尋",
+                "＊語言以中文為主、英日文為輔，數據大小從數百至數千萬，內容包括新聞、論壇文章、專有名詞等。",
+                "＊曾在外部程式聚會 TOOCON 中作為講者分享全文檢索基礎概念。"
+            ],
+            "Note": "<a target=\"_blank\" href=\"https://www.facebook.com/groups/toocon/posts/2860626204080231/\"><img class=\"img-fluid\" src=\"./img/project/toocon.jpg\"></a>"
+        },
+        {
+            "Id": "s4",
+            "SiteName": "project - 哈啦區、GNN 新聞相關推薦",
+            "Title": "巴哈姆特電玩資訊站哈啦區、GNN 新聞相關推薦",
+            "ImageSet": [
+                "./img/project/s4_02.png",
+                "./img/project/s4_01.png",
+                "./img/project/s4_03.png"
+            ],
+            "Content": [
+                "＊使用簡易的 NLP 與統計學技巧做 keyword extraction 後推薦用戶相似文章。",
+                "＊屬於 content based、unsupervised 的推薦演算法"
+            ],
+            "Note": ""
+        },
+        {
+            "Id": "post",
+            "SiteName": "project - 哈啦區發文功能強化",
+            "Title": "巴哈姆特電玩資訊站哈啦區發文功能強化",
+            "ImageSet": [
+                "./img/project/post_05.png",
+                "./img/project/post_06.png",
+                "./img/project/post_01.png",
+                "./img/project/post_02.png",
+                "./img/project/post_03.png",
+                "./img/project/post_04.png"
+            ],
+            "Content": [
+                "各種哈啦區發文、留言的附加功能之前後端設計。",
+                "＊贊助貼文",
+                "＊貼文附加投票",
+                "＊貼文附加稱號",
+                "＊熱門留言顯示強化",
+                "＊黑名單系統"
+            ],
+            "Note": "2021-08|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=35869\">【公告】全新文章贊助功能於《哈啦區》實裝！iOS 版 9/6 更新</a><br>2022-07|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=37374\">【情報】哈啦區留言樓層功能與熱門留言 8/2 正式推出</a><br>2022-11|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=37861\">【公告】哈啦區推出全新投票功能（1/3 APP 版更新）</a><br>2023-09|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=38959\">【公告】哈啦板「看板發文稱號」系統正式推出</a><br>2024-01|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=39366\">【公告】哈啦區黑名單功能更新＆好友及黑名單人數上限提高已上線</a><br>"
+        },
+        {
+            "Id": "guild",
+            "SiteName": "project - 公會 2.0",
+            "Title": "巴哈姆特電玩資訊站公會 2.0 設計",
+            "ImageSet": [
+                "./img/project/guild_01.jpg",
+                "./img/project/guild_02.png",
+                "./img/project/guild_03.png",
+                "./img/project/guild_04.png",
+                "./img/project/guild_05.jpg",
+                "./img/project/guild_06.png"
+            ],
+            "Content": [
+                "除了基本的社群網站功能外，該專案最大的挑戰在於巴哈姆特公會的列表顯示與操作權限相當複雜，基本上是超過三個維度的規則。",
+                "＊主要維度一：公會本身具有 [公開、悄悄話、秘密基地] 三種隱私類型",
+                "＊主要維度二：玩家本身具有 [未登入、未加入、會員、幹部、會長] 五種狀態",
+                "＊次要維度一：用戶已手機驗證 [否、是]",
+                "＊次要維度二：公會被凍結 [否、是]",
+                "＊次要維度三：公會分級 [普遍級、兒少保護、限制級]",
+                "＊最後還有一些獨立存在的特殊規則",
+                "需要使用 web 框架時常採用的 mIddleware、chain of responsibility 等設計模式，才能製作出好維護、好測試的權限系統。"
+            ],
+            "Note": "2020-08|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=33937\">【公告】自由且多元的 ACG 社群：巴哈公會 2.0 佈告欄 03/04 更新</a><br>2020-11|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=34390\">【公告】巴哈姆特 APP 改版，公會 2.0 雙裝置 11/23 正式上線！</a><br>2020-12|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=34599\">【分享】＊ 巴哈公會新手村 ＊ 12/14 下篇新增公會管理小技巧 & 串樓互動技！</a><br>2021-01|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=34828\">【公告】巴哈公會 2.0 網頁改版 1/28 開放 Beta 測試 ，歡迎參與體驗！</a><br>2021-03|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=34989\">【公告】巴哈公會 2.0 網頁改版，3/4 正式上線！</a><br>"
         }
     ]
 }

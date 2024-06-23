@@ -27,7 +27,7 @@
             crossorigin="anonymous">
         </script>
         <script src="./js/navigation.js"></script>
-        <title>project - 巴哈姆特站內搜尋</title>
+        <title>project - 公會 2.0</title>
     </head>
     <body>
         
@@ -118,7 +118,7 @@
     <div class="row padding-block">
         <div class="col-12">
             <div class="text-center">
-                <h2 class="project_title">巴哈姆特電玩資訊站各大服務站內搜尋系統設計</h2>
+                <h2 class="project_title">巴哈姆特電玩資訊站公會 2.0 設計</h2>
             </div>
         </div>
     </div>
@@ -157,27 +157,37 @@
                         >
                     </li>
                     
+                    <li
+                        data-target="#carousel"
+                        data-slide-to="5"
+                        >
+                    </li>
+                    
                 </ol>
                 <div class="carousel-inner text-center">
                     
                     <div class="carousel-item active">
-                        <img src="./img/project/forum_search.png" alt="./img/project/forum_search.png">
+                        <img src="./img/project/guild_01.jpg" alt="./img/project/guild_01.jpg">
                     </div>
                     
                     <div class="carousel-item ">
-                        <img src="./img/project/board_search.png" alt="./img/project/board_search.png">
+                        <img src="./img/project/guild_02.png" alt="./img/project/guild_02.png">
                     </div>
                     
                     <div class="carousel-item ">
-                        <img src="./img/project/anime_search.png" alt="./img/project/anime_search.png">
+                        <img src="./img/project/guild_03.png" alt="./img/project/guild_03.png">
                     </div>
                     
                     <div class="carousel-item ">
-                        <img src="./img/project/acg_search.png" alt="./img/project/acg_search.png">
+                        <img src="./img/project/guild_04.png" alt="./img/project/guild_04.png">
                     </div>
                     
                     <div class="carousel-item ">
-                        <img src="./img/project/gnn_search.png" alt="./img/project/gnn_search.png">
+                        <img src="./img/project/guild_05.jpg" alt="./img/project/guild_05.jpg">
+                    </div>
+                    
+                    <div class="carousel-item ">
+                        <img src="./img/project/guild_06.png" alt="./img/project/guild_06.png">
                     </div>
                     
                 </div>
@@ -196,25 +206,41 @@
         <div class="col-12">
             
             <blockquote class="blockquote">
-                ＊使用 Elasticsearch 根據各大服務負責人的搜尋需求規劃相對應的 index、analyzer、query DSL、ranking function。
+                除了基本的社群網站功能外，該專案最大的挑戰在於巴哈姆特公會的列表顯示與操作權限相當複雜，基本上是超過三個維度的規則。
             </blockquote>
             
             <blockquote class="blockquote">
-                ＊技術包括同義詞、模糊搜尋、autocomplete、aggregation、多 index 搜尋
+                ＊主要維度一：公會本身具有 [公開、悄悄話、秘密基地] 三種隱私類型
             </blockquote>
             
             <blockquote class="blockquote">
-                ＊語言以中文為主、英日文為輔，數據大小從數百至數千萬，內容包括新聞、論壇文章、專有名詞等。
+                ＊主要維度二：玩家本身具有 [未登入、未加入、會員、幹部、會長] 五種狀態
             </blockquote>
             
             <blockquote class="blockquote">
-                ＊曾在外部程式聚會 TOOCON 中作為講者分享全文檢索基礎概念。
+                ＊次要維度一：用戶已手機驗證 [否、是]
+            </blockquote>
+            
+            <blockquote class="blockquote">
+                ＊次要維度二：公會被凍結 [否、是]
+            </blockquote>
+            
+            <blockquote class="blockquote">
+                ＊次要維度三：公會分級 [普遍級、兒少保護、限制級]
+            </blockquote>
+            
+            <blockquote class="blockquote">
+                ＊最後還有一些獨立存在的特殊規則
+            </blockquote>
+            
+            <blockquote class="blockquote">
+                需要使用 web 框架時常採用的 mIddleware、chain of responsibility 等設計模式，才能製作出好維護、好測試的權限系統。
             </blockquote>
             
         </div>
         <div class="col-12">
             <blockquote class="blockquote">
-                <a target="_blank" href="https://www.facebook.com/groups/toocon/posts/2860626204080231/"><img class="img-fluid" src="./img/project/toocon.jpg"></a>
+                2020-08|<a target="_blank" href="https://forum.gamer.com.tw/C.php?bsn=60404&snA=33937">【公告】自由且多元的 ACG 社群：巴哈公會 2.0 佈告欄 03/04 更新</a><br>2020-11|<a target="_blank" href="https://forum.gamer.com.tw/C.php?bsn=60404&snA=34390">【公告】巴哈姆特 APP 改版，公會 2.0 雙裝置 11/23 正式上線！</a><br>2020-12|<a target="_blank" href="https://forum.gamer.com.tw/C.php?bsn=60404&snA=34599">【分享】＊ 巴哈公會新手村 ＊ 12/14 下篇新增公會管理小技巧 & 串樓互動技！</a><br>2021-01|<a target="_blank" href="https://forum.gamer.com.tw/C.php?bsn=60404&snA=34828">【公告】巴哈公會 2.0 網頁改版 1/28 開放 Beta 測試 ，歡迎參與體驗！</a><br>2021-03|<a target="_blank" href="https://forum.gamer.com.tw/C.php?bsn=60404&snA=34989">【公告】巴哈公會 2.0 網頁改版，3/4 正式上線！</a><br>
             </blockquote>
         </div>
     </div>

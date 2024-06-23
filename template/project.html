@@ -1,16 +1,38 @@
 {{template "_header" .}}
 <!--content-->
 <style>
-    #carousel img {
-        max-height: 1000px;
-        max-width: 100%;
+    .carousel-inner{
+        height:800px;
     }
+
+    #carousel img {
+        width: 100%;
+        height: 800px;
+        object-fit: contain;
+    }
+
+    @media (max-width:960px) {
+        .carousel-inner{
+            height: 60vh;
+        }
+
+        #carousel img {
+            width: 100%;
+            height: 60vh;
+            object-fit: contain;
+        }
+
+        .project_title {
+            padding-top: 10vh;
+        }
+    }
+
 </style>
 <div class="container">
     <div class="row padding-block">
         <div class="col-12">
             <div class="text-center">
-                <h2>{{.Title}}</h2>
+                <h2 class="project_title">{{.Title}}</h2>
             </div>
         </div>
     </div>
@@ -46,9 +68,11 @@
     </div>
     <div class="row padding-block">
         <div class="col-12">
+            {{range .Content}}
             <blockquote class="blockquote">
-                {{.Content}}
+                {{.}}
             </blockquote>
+            {{end}}
         </div>
         <div class="col-12">
             <blockquote class="blockquote">
