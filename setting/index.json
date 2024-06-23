@@ -34,32 +34,32 @@
     "Skills": [
         {
             "Title": "PHP",
-            "Image": "./img/Skill/PHP_logo.svg",
+            "Image": "./img/skill/PHP_logo.svg",
             "Content": "網頁後端工程"
         },
         {
             "Title": "HTML、CSS、JS",
-            "Image": "./img/Skill/ECMA_logo.png",
+            "Image": "./img/skill/ECMA_logo.png",
             "Content": "網頁前端工程"
         },
         {
             "Title": "Python",
-            "Image": "./img/Skill/python_logo.svg",
+            "Image": "./img/skill/python_logo.svg",
             "Content": "演算法研究"
         },
         {
             "Title": "Elasticsearch",
-            "Image": "./img/Skill/ES_logo.svg",
+            "Image": "./img/skill/ES_logo.svg",
             "Content": "站內搜尋引擎"
         },
         {
             "Title": "MySQL",
-            "Image": "./img/Skill/mysql_logo.png",
+            "Image": "./img/skill/mysql_logo.png",
             "Content": "關聯式資料庫"
         },
         {
             "Title": "Git",
-            "Image": "./img/Skill/Git_logo.svg",
+            "Image": "./img/skill/Git_logo.svg",
             "Content": "版本控管"
         }
     ]
