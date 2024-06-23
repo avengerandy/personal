@@ -7,6 +7,13 @@ import (
 	"os"
 )
 
+type IndexConference struct {
+	Title     string
+	Authors   string
+	Published string
+	Date      string
+}
+
 type IndexSkill struct {
 	Title   string
 	Image   string
@@ -26,6 +33,7 @@ type IndexHandler struct {
 		Autobiography []template.HTML
 		Projects      []IndexProject
 		Skills        []IndexSkill
+		Conferences   []IndexConference
 	}
 }
 

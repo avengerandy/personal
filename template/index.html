@@ -15,7 +15,7 @@
             <div class="text-center"><h2>Autobiography</h2></div>
             {{range .Autobiography}}
             <blockquote class="blockquote">
-                {{.}}
+                &emsp;&emsp;{{.}}
             </blockquote>
             {{end}}
         </div>
@@ -31,7 +31,7 @@
     <!--project-->
     <div class="row padding-block">
         <div class="col-12">
-            <div class="text-center"><h2>Project</h2></div>
+            <div class="text-center"><h2>Work Projects</h2></div>
         </div>
         {{range $Project := .Projects}}
         <div class="col-6 col-md-3 project">
@@ -49,47 +49,25 @@
     </div>
     <hr>
 
-    <!--research-->
+    <!--conference-->
     <div class="row padding-block">
         <div class="col-12">
-            <div class="text-center"><h2>Research</h2></div>
+            <div class="text-center"><h2>Conference</h2></div>
         </div>
-        <div class="col-6 col-md-3 project">
-            <img class="img-fluid" src="./img/project (3).jpg"/>
-            <div class="hover-div justify-content-center">
-                <div class="text-center"><h4>Riko</h4></div>
-                <p>
-                    Aqours的隊員，同時為分隊「Guilty Kiss」的隊員。應援色是櫻花色。
-                </p>
-            </div>
+        {{range $Conference := .Conferences}}
+        <div class="col-12 project">
+            <a target="_blank" href="https://ieeexplore.ieee.org/document/8959900">
+                <div class="card text-white bg-secondary col-12">
+                    <div class="card-body">
+                        <h5 class="card-title">{{$Conference.Title}}</h5>
+                        Authors: {{$Conference.Authors}}<br>
+                        Published in: {{$Conference.Published}}<br>
+                        Date of Conference: {{$Conference.Date}}
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="col-6 col-md-3 project">
-            <img class="img-fluid" src="./img/project (3).jpg"/>
-            <div class="hover-div justify-content-center">
-                <div class="text-center"><h4>Riko</h4></div>
-                <p>
-                    Aqours的隊員，同時為分隊「Guilty Kiss」的隊員。應援色是櫻花色。
-                </p>
-            </div>
-        </div>
-        <div class="col-6 col-md-3 project">
-            <img class="img-fluid" src="./img/project (3).jpg"/>
-            <div class="hover-div justify-content-center">
-                <div class="text-center"><h4>Riko</h4></div>
-                <p>
-                    Aqours的隊員，同時為分隊「Guilty Kiss」的隊員。應援色是櫻花色。
-                </p>
-            </div>
-        </div>
-        <div class="col-6 col-md-3 project">
-            <img class="img-fluid" src="./img/project (3).jpg"/>
-            <div class="hover-div justify-content-center">
-                <div class="text-center"><h4>Riko</h4></div>
-                <p>
-                    Aqours的隊員，同時為分隊「Guilty Kiss」的隊員。應援色是櫻花色。
-                </p>
-            </div>
-        </div>
+        {{end}}
     </div>
     <hr>
 

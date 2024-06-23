@@ -76,3 +76,7 @@
 .more-button:hover {
     border: 2px solid white;
 }
+
+.card:hover {
+    background-color: #6d6d6d !important;
+}
