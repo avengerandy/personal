@@ -1,0 +1,53 @@
+{{template "_header" .}}
+<!--content-->
+<div class="container">
+    <div class="row padding-block">
+        <div class="col-12">
+            <div class="text-center">
+                <h2 class="project_title">工作經歷</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        {{range $Work := .Works}}
+        <div class="col-12 project">
+            <div class="card text-white bg-secondary">
+                <div class="card-body">
+                    {{range $Work.Title}}
+                    <h4 class="card-title">{{.}}</h4>
+                    {{end}}
+                    {{range $Work.Content}}
+                    　　{{.}}<br><br>
+                    {{end}}
+                    <p class="card-text float-right">{{$Work.Time}}</p>
+                </div>
+            </div>
+        </div>
+        {{end}}
+    </div>
+    <div class="row padding-block">
+        <div class="col-12">
+            <div class="text-center">
+                <h2 class="project_title">學歷</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        {{range $Education := .Educations}}
+        <div class="col-12 project">
+            <div class="card text-white bg-secondary">
+                <div class="card-body">
+                    {{range $Education.Title}}
+                    <h4 class="card-title">{{.}}</h4>
+                    {{end}}
+                    {{range $Education.Content}}
+                    　　{{.}}<br><br>
+                    {{end}}
+                    <p class="card-text float-right">{{$Education.Time}}</p>
+                </div>
+            </div>
+        </div>
+        {{end}}
+    </div>
+</div>
+{{template "_footer" .}}

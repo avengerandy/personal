@@ -9,9 +9,10 @@ import (
 func main() {
 
 	pages := map[string]handler.Handler{
-		"Index":    &handler.IndexHandler{},
-		"About":    &handler.AboutHandler{},
-		"Project":  &handler.ProjectHandler{},
+		"Index":      &handler.IndexHandler{},
+		"About":      &handler.AboutHandler{},
+		"Project":    &handler.ProjectHandler{},
+		"Experience": &handler.ExperienceHandler{},
 	}
 
 	tmpl, err := template.ParseGlob("./template/*.html")
