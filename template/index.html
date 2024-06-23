@@ -49,6 +49,27 @@
     </div>
     <hr>
 
+    <!--side project-->
+    <div class="row padding-block">
+        <div class="col-12">
+            <div class="text-center"><h2>Side Projects</h2></div>
+        </div>
+        {{range $SideProject := .SideProjects}}
+        <div class="col-6 col-md-3 project">
+            <a target="_blank" href="{{$SideProject.Link}}">
+                <img class="img-fluid" src="{{$SideProject.Image}}"/>
+                <div class="hover-div justify-content-center">
+                    <div class="text-center">
+                        <h4>{{$SideProject.Title}}</h4>
+                        <p>{{$SideProject.Content}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {{end}}
+    </div>
+    <hr>
+
     <!--conference-->
     <div class="row padding-block">
         <div class="col-12">

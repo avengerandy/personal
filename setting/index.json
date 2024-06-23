@@ -31,6 +31,32 @@
             "Content": "巴哈姆特電玩資訊站<br>公會社群 2.0 設計"
         }
     ],
+    "SideProjects": [
+        {
+            "Title": "rankNet",
+            "Image": "./img/project/sideProject_01.png",
+            "Link": "#",
+            "Content": "learning DLsite rank function  by rankNet"
+        },
+        {
+            "Title": "RewriteDagger",
+            "Image": "./img/project/sideProject_02.png",
+            "Link": "https://github.com/avengerandy/RewriteDagger",
+            "Content": "A php test tool that mock anything without using any extensions."
+        },
+        {
+            "Title": "chorus target detecion",
+            "Image": "./img/project/sideProject_03.png",
+            "Link": "https://andy850701.pixnet.net/blog/post/560171205",
+            "Content": "使用 CNN 檢測一段合唱中是否包含某歌手的研究"
+        },
+        {
+            "Title": "object detection & classification",
+            "Image": "./img/project/sideProject_04.png",
+            "Link": "https://andy850701.pixnet.net/blog/post/556306393",
+            "Content": "使用 CNN 偵測動漫畫臉部與辨識其角色"
+        }
+    ],
     "Conferences": [
         {
             "Title": "淺談全文檢索 inverted index and all that jazz",
