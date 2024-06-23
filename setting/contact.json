@@ -1,0 +1,11 @@
+{
+    "SiteName": "contact",
+    "Images": [
+        "./img/contact/contact_01.jpg",
+        "./img/contact/contact_02.jpg",
+        "./img/contact/contact_03.jpg",
+        "./img/contact/contact_04.jpg",
+        "./img/contact/contact_05.jpg"
+    ],
+    "Content": "在工作時間內外我都一樣熱愛技術話題，如果你對我感興趣，歡迎隨時來與我討論或提問，我會的都願意回答、不會的則願意一起尋找答案 (聯絡方式都列在網頁下方)。"
+}

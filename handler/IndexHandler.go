@@ -12,6 +12,7 @@ type IndexConference struct {
 	Authors   string
 	Published string
 	Date      string
+	Link      string
 }
 
 type IndexSkill struct {

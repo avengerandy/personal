@@ -56,7 +56,7 @@
         </div>
         {{range $Conference := .Conferences}}
         <div class="col-12 project">
-            <a target="_blank" href="https://ieeexplore.ieee.org/document/8959900">
+            <a target="_blank" href="{{$Conference.Link}}">
                 <div class="card text-white bg-secondary col-12">
                     <div class="card-body">
                         <h5 class="card-title">{{$Conference.Title}}</h5>

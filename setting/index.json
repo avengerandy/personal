@@ -36,19 +36,22 @@
             "Title": "淺談全文檢索 inverted index and all that jazz",
             "Authors": "陳庭宇 (Mazer)",
             "Published": "TOOCON #12",
-            "Date": "25 November 2023"
+            "Date": "25 November 2023",
+            "Link": "https://www.facebook.com/groups/toocon/posts/2860626204080231/"
         },
         {
             "Title": "Parameter Setting of CMA-ES: A Numerical Study on CEC2019 100-Digit Challenge",
             "Authors": "Authors: Ting-Yu Chen; Jia-Fong Yeh; Tsung-Su Yeh; Tsung-Che Chiang",
             "Published": "2019 International Conference on Technologies and Applications of Artiﬁcial Intelligence (TAAI)",
-            "Date": "21-23 November 2019"
+            "Date": "21-23 November 2019",
+            "Link": "https://ieeexplore.ieee.org/document/8959900"
         },
         {
             "Title": "Modified L-SHADE for Single Objective Real-Parameter Optimization",
             "Authors": "Jia-Fong Yeh; Ting-Yu Chen; Tsung-Che Chiang",
             "Published": "2019 IEEE Congress on Evolutionary Computation (CEC)",
-            "Date": "10-13 June 2019"
+            "Date": "10-13 June 2019",
+            "Link": "https://ieeexplore.ieee.org/document/8789991"
         }
     ],
     "Skills": [

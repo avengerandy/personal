@@ -12,6 +12,7 @@ func main() {
 		"Index":      &handler.IndexHandler{},
 		"About":      &handler.AboutHandler{},
 		"Project":    &handler.ProjectHandler{},
+		"Contact":    &handler.ContactHandler{},
 		"Experience": &handler.ExperienceHandler{},
 	}
 
