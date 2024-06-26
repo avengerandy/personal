@@ -7,33 +7,34 @@
                 <h2 class="project_title">工作經歷</h2>
             </div>
         </div>
+        <div class="col-12">
+            <div class="row">
+                {{range $Work := .Works}}
+                <div class="col-12">
+                    <div class="job">
+                        <div class="card-body">
+                            <div  style="display:flex;align-items: center;margin-bottom: 32px;    justify-content: center;">
+                                <div class="job-logo">
+                                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/4e/e2/2d4ee2e8-fa3c-c3b2-a073-b1c734b968df/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/246x0w.webp">
+                                </div>
+                                <div>
+                                    <h4>{{index $Work.Title 0}}</h4>
 
-        <div class="row">
-            {{range $Work := .Works}}
-            <div class="col-12">
-                <div class="job">
-                    <div class="card-body">
-                        <div  style="display:flex;align-items: center;margin-bottom: 32px;    justify-content: center;">
-                            <div class="job-logo">
-                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/4e/e2/2d4ee2e8-fa3c-c3b2-a073-b1c734b968df/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/246x0w.webp">
+                                    <h5>{{index $Work.Title 1}}</h5>
+                                    <p class="card-text">{{$Work.Time}}</p>
+                                </div>
                             </div>
                             <div>
-                                <h4>{{index $Work.Title 0}}</h4>
-
-                                <h5>{{index $Work.Title 1}}</h5>
-                                <p class="card-text">{{$Work.Time}}</p>
+                            {{range $Work.Content}}
+                            {{.}}<br><br>
+                            {{end}}
                             </div>
-                        </div>
-                        <div>
-                        {{range $Work.Content}}
-                        {{.}}<br><br>
-                        {{end}}
-                        </div>
 
+                        </div>
                     </div>
                 </div>
+                {{end}}
             </div>
-            {{end}}
         </div>
     </div>
 </div>
