@@ -1,5 +1,6 @@
 {
     "SiteName": "Index",
+    "BodyClass": "index-page",
     "Autobiography": [
         "我是 mazer。上一份工作主要負責社群網站、站內搜尋、推薦系統，有一年以上的全職兼職遠端經驗。根據公司的當前的人力配置，日常維護、新產品開發、舊產品優化、新技術研究等，皆在我的工作範疇中。",
         "技能上，除了具備維護大型社群網站必要的 SEO、商業邏輯實現、基本網頁安全、資料庫語法優化、版本控管外。我也研究 Evolutionary Computation、Recommendation System、Information Retrieval 等領域，經手過的站內搜尋類型以中文為主、數據大小從數百至數千萬、內容包括新聞、論壇文章、專有名詞等。",

@@ -1,11 +1,11 @@
 body {
     background-color: rgba(55, 55, 51, 1);
-    color: #FFFFFF
+    color: #f7f7f7;
 }
 
 .padding-block {
-    padding-top: 3%;
-    padding-bottom: 1%;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 img.square {
@@ -13,6 +13,40 @@ img.square {
     border-radius: 50%;
 }
 
+.h2, h2 {
+    font-size: 2.6rem;
+    opacity: .7;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.blockquote {
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    width: 880px;
+    max-width: 85%;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+}
 hr {
-    border-color:  #FFFFFF;
+    border-color: #666;
+}
+.card-body {
+    color: #dcdcdc;
+}
+.card-title {
+    color: #f7f7f7;
+    font-size: 1.4rem;
+}
+a:hover {
+    text-decoration: none!important;
+}
+.job-logo {
+    width: 108px;
+    margin-right: 16px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.job-logo img{
+    width: 100%;
 }

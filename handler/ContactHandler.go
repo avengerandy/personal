@@ -10,6 +10,7 @@ import (
 type ContactHandler struct {
 	templateData struct {
 		SiteName   string
+		BodyClass  string
 		Images     []string
 		Content    string
 	}

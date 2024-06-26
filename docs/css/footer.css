@@ -1,14 +1,14 @@
 .footer {
-    margin-top: 3%;
-    background-color: black;
+    padding: 68px 0 60px;
+    background-color: #1a1a1a;
 }
 
 .footer img {
-    width: 30%;
+    width: 120px;
 }
 
 .footer .col {
-    border-left: 1px solid #FFFFFF;
+    text-align: right;
 }
 
 .footer a {
@@ -17,4 +17,7 @@
 
 .footer blockquote {
     margin: 1rem 0;
+    width: auto;
+    max-width: 100%;
+    font-size: 14px;
 }

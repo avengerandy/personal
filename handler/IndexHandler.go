@@ -38,6 +38,7 @@ type IndexProject struct {
 type IndexHandler struct {
 	templateData struct {
 		SiteName      string
+		BodyClass      string
 		Autobiography []template.HTML
 		Projects      []IndexProject
 		SideProjects  []IndexSideProjects

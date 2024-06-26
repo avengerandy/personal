@@ -7,47 +7,61 @@
                 <h2 class="project_title">工作經歷</h2>
             </div>
         </div>
+
+        <div class="row">
+            {{range $Work := .Works}}
+            <div class="col-12">
+                <div class="job">
+                    <div class="card-body">
+                        <div  style="display:flex;align-items: center;margin-bottom: 32px;    justify-content: center;">
+                            <div class="job-logo">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/4e/e2/2d4ee2e8-fa3c-c3b2-a073-b1c734b968df/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/246x0w.webp">
+                            </div>
+                            <div>
+                                <h4>{{index $Work.Title 0}}</h4>
+
+                                <h5>{{index $Work.Title 1}}</h5>
+                                <p class="card-text">{{$Work.Time}}</p>
+                            </div>
+                        </div>
+                        <div>
+                        {{range $Work.Content}}
+                        {{.}}<br><br>
+                        {{end}}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {{end}}
+        </div>
     </div>
-    <div class="row">
-        {{range $Work := .Works}}
-        <div class="col-12 project">
-            <div class="card text-white bg-secondary">
-                <div class="card-body">
-                    {{range $Work.Title}}
-                    <h4 class="card-title">{{.}}</h4>
-                    {{end}}
-                    {{range $Work.Content}}
-                    　　{{.}}<br><br>
-                    {{end}}
-                    <p class="card-text float-right">{{$Work.Time}}</p>
+</div>
+<div class="bg-secondary padding-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <h2 class="project_title">學歷</h2>
                 </div>
             </div>
         </div>
-        {{end}}
-    </div>
-    <div class="row padding-block">
-        <div class="col-12">
-            <div class="text-center">
-                <h2 class="project_title">學歷</h2>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        {{range $Education := .Educations}}
-        <div class="col-12 project">
-            <div class="card text-white bg-secondary">
-                <div class="card-body">
-                    {{range $Education.Title}}
-                    <h4 class="card-title">{{.}}</h4>
-                    {{end}}
-                    {{range $Education.Content}}
-                    　　{{.}}<br><br>
-                    {{end}}
-                    <p class="card-text float-right">{{$Education.Time}}</p>
+        <div class="row">
+            {{range $Education := .Educations}}
+            <div class="col-12 col-md-6 project">
+                <div class="card text-white bg-secondary"  style="margin-bottom: 48px;">
+                    <div class="card-body">
+                        <h4 class="text-center">{{index $Education.Title 0}}</h4>
+                        <h4 class="card-title text-center">{{index $Education.Title 1}}</h4>
+                        {{range $Education.Content}}
+                        　　{{.}}<br><br>
+                        {{end}}
+                        <p class="card-text float-right">{{$Education.Time}}</p>
+                    </div>
                 </div>
             </div>
+            {{end}}
         </div>
-        {{end}}
     </div>
 </div>
 {{template "_footer" .}}

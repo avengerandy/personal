@@ -10,6 +10,7 @@ import (
 type AboutHandler struct {
 	templateData struct {
 		SiteName            string
+		BodyClass            string
 		RecentAutobiography []template.HTML
 		PastAutobiography   []template.HTML
 	}

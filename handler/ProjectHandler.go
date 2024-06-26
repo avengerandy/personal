@@ -8,12 +8,13 @@ import (
 )
 
 type Project struct {
-	Id       string
-	SiteName string
-	Title    string
-	ImageSet []string
-	Content  []string
-	Note     template.HTML
+	Id        string
+	SiteName  string
+	BodyClass string
+	Title     string
+	ImageSet  []string
+	Content   []string
+	Note      template.HTML
 }
 
 type ProjectHandler struct {

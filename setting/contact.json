@@ -1,5 +1,6 @@
 {
     "SiteName": "contact",
+    "BodyClass": "",
     "Images": [
         "./img/contact/contact_01.jpg",
         "./img/contact/contact_02.jpg",

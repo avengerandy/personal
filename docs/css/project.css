@@ -2,13 +2,20 @@
     padding: 15px;
     position: relative;
 }
+.project a {
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
 
 .project h4 {
-    color: #FFFFFF;
+    color: #fff;
+    font-weight: bold;
 }
 
 .project p {
-    color: #FFFFFF;
+    font-size: 15px;
+    color: #dcdcdc;
 }
 
 .project .hover-div {
@@ -31,7 +38,7 @@
 }
 
 .project:hover img {
-    filter: blur(1px);
+    filter: blur(3px);
     opacity: 0.3;
 }
 
@@ -68,8 +75,18 @@
         filter: blur(1px);
         opacity: 0.3;
     }
-    
+
     .project .hover-div {
         opacity: 1;
     }
 }
+.logo-block .project  {
+    text-align: center;
+}
+.logo-block .project img{
+    width: 76%;
+}
+.project:hover {
+    cursor: pointer;
+}
+

@@ -3,4 +3,4 @@ document.addEventListener("DOMContentLoaded", function() {
         this.classList.toggle('navigation-icon-x');
         document.getElementsByClassName("navigation")[0].classList.toggle('navigationOpen');
     });
-}); 
+});

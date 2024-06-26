@@ -16,6 +16,7 @@ type Work_Education struct {
 type ExperienceHandler struct {
 	templateData struct {
 		SiteName   string
+		BodyClass  string
 		Works      []Work_Education
 		Educations []Work_Education
 	}

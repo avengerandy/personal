@@ -3,6 +3,7 @@
         {
             "Id": "search",
             "SiteName": "project - 巴哈姆特站內搜尋",
+            "BodyClass": "",
             "Title": "巴哈姆特電玩資訊站各大服務站內搜尋系統設計",
             "ImageSet": [
                 "./img/project/forum_search.png",
@@ -22,6 +23,7 @@
         {
             "Id": "s4",
             "SiteName": "project - 哈啦區、GNN 新聞相關推薦",
+            "BodyClass": "",
             "Title": "巴哈姆特電玩資訊站哈啦區、GNN 新聞相關推薦",
             "ImageSet": [
                 "./img/project/s4_04.png",
@@ -38,6 +40,7 @@
         {
             "Id": "post",
             "SiteName": "project - 哈啦區發文功能強化",
+            "BodyClass": "",
             "Title": "巴哈姆特電玩資訊站哈啦區發文功能強化",
             "ImageSet": [
                 "./img/project/post_06.png",
@@ -60,6 +63,7 @@
         {
             "Id": "guild",
             "SiteName": "project - 公會 2.0",
+            "BodyClass": "",
             "Title": "巴哈姆特電玩資訊站公會 2.0 設計",
             "ImageSet": [
                 "./img/project/guild_06.png",
