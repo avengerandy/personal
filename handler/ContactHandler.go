@@ -12,7 +12,7 @@ type ContactHandler struct {
 		SiteName   string
 		BodyClass  string
 		Images     []string
-		Content    string
+		Content    []string
 	}
 }
 

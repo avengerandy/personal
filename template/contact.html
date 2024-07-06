@@ -40,9 +40,11 @@
             </div>
         </div>
         <div class="col-12">
+            {{range .Content}}
             <blockquote class="blockquote">
-                &emsp;&emsp;{{.Content}}
+                &emsp;&emsp;{{.}}
             </blockquote>
+            {{end}}
         </div>
     </div>
 </div>
