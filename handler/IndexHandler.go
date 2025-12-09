@@ -3,7 +3,6 @@ package handler
 import (
 	"encoding/json"
 	"html/template"
-	"io/ioutil"
 	"os"
 )
 
@@ -49,16 +48,20 @@ type IndexHandler struct {
 
 func (handler *IndexHandler) HandleTemplate(tmpl *template.Template) error {
 	indexFile, err := os.Create("./docs/index.html")
+	if err != nil {
+		return err
+	}
 	defer indexFile.Close()
+
+	data, err := os.ReadFile("./setting/index.json")
 	if err != nil {
 		return err
 	}
 
-	data, err := ioutil.ReadFile("./setting/index.json")
+	err = json.Unmarshal(data, &handler.templateData)
 	if err != nil {
 		return err
 	}
-	json.Unmarshal(data, &handler.templateData)
 
 	err = tmpl.ExecuteTemplate(indexFile, "index.html", handler.templateData)
 	if err != nil {

@@ -3,7 +3,6 @@ package handler
 import (
 	"encoding/json"
 	"html/template"
-	"io/ioutil"
 	"os"
 )
 
@@ -24,16 +23,20 @@ type ExperienceHandler struct {
 
 func (handler *ExperienceHandler) HandleTemplate(tmpl *template.Template) error {
 	indexFile, err := os.Create("./docs/experience.html")
+	if err != nil {
+		return err
+	}
 	defer indexFile.Close()
+
+	data, err := os.ReadFile("./setting/experience.json")
 	if err != nil {
 		return err
 	}
 
-	data, err := ioutil.ReadFile("./setting/experience.json")
+	err = json.Unmarshal(data, &handler.templateData)
 	if err != nil {
 		return err
 	}
-	json.Unmarshal(data, &handler.templateData)
 
 	err = tmpl.ExecuteTemplate(indexFile, "experience.html", handler.templateData)
 	if err != nil {
