@@ -1,0 +1,25 @@
+{
+    "Id": "guild",
+    "SiteName": "project - 公會 2.0",
+    "BodyClass": "",
+    "Title": "巴哈姆特電玩資訊站公會 2.0 設計",
+    "ImageSet": [
+        "./img/project/guild_06.png",
+        "./img/project/guild_01.jpg",
+        "./img/project/guild_02.png",
+        "./img/project/guild_03.png",
+        "./img/project/guild_04.png",
+        "./img/project/guild_05.jpg"
+    ],
+    "Content": [
+        "除了基本的社群網站功能外，該專案最大的挑戰在於巴哈姆特公會比起其他服務來說顯示與操作權限相當複雜，基本上是超過三個維度的規則。",
+        "＊主要維度一：公會本身具有 [公開、悄悄話、秘密基地] 三種隱私類型",
+        "＊主要維度二：玩家本身具有 [未登入、未加入、會員、幹部、會長] 五種狀態",
+        "＊次要維度一：用戶已手機驗證 [否、是]",
+        "＊次要維度二：公會被凍結 [否、是]",
+        "＊次要維度三：公會分級 [普遍級、兒少保護、限制級]",
+        "＊最後還有一些獨立存在的特殊規則",
+        "⾯對這樣⼀個權限控管的需求，我嘗試參考各大 web 框架時常採用的 mIddleware、chain of responsibility 等設計模式來設計⼀個擴充性較⾼、好維護、可單元測試的模組來專⾨負責，才能製作出此權限系統。"
+    ],
+    "Note": "2020-08|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=33937\">【公告】自由且多元的 ACG 社群：巴哈公會 2.0 佈告欄 03/04 更新</a><br>2020-11|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=34390\">【公告】巴哈姆特 APP 改版，公會 2.0 雙裝置 11/23 正式上線！</a><br>2020-12|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=34599\">【分享】＊ 巴哈公會新手村 ＊ 12/14 下篇新增公會管理小技巧 & 串樓互動技！</a><br>2021-01|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=34828\">【公告】巴哈公會 2.0 網頁改版 1/28 開放 Beta 測試 ，歡迎參與體驗！</a><br>2021-03|<a target=\"_blank\" href=\"https://forum.gamer.com.tw/C.php?bsn=60404&snA=34989\">【公告】巴哈公會 2.0 網頁改版，3/4 正式上線！</a><br>"
+}

@@ -1,0 +1,20 @@
+{
+    "Id": "search",
+    "SiteName": "project - 巴哈姆特站內搜尋",
+    "BodyClass": "",
+    "Title": "巴哈姆特電玩資訊站各大服務站內搜尋系統設計",
+    "ImageSet": [
+        "./img/project/forum_search.png",
+        "./img/project/board_search.png",
+        "./img/project/anime_search.png",
+        "./img/project/acg_search.png",
+        "./img/project/gnn_search.png"
+    ],
+    "Content": [
+        "使用 Elasticsearch 根據各大服務負責人的搜尋需求規劃相對應的 index、analyzer、query DSL、ranking function。這些設計沒有正確答案，作品重視熱⾨程度、新聞更重視時間因素、公會需要有標籤系統、哈啦區文章則有雙層特殊文章結構。團隊們需要在 ES 系統的能⼒、服務希望提供的體驗、⽤⼾給予的回饋三者中做拉扯，來迭代優化其公式。這個過程是困難卻愉悅的，每⼀次發現更好的公式都讓⼈獲得成就感。",
+        "＊技術包括同義詞、模糊搜尋、autocomplete、aggregation、多 index 搜尋",
+        "＊語言以中文為主、英日文為輔，數據大小從數百至數千萬，內容包括新聞、論壇文章、專有名詞等。",
+        "＊曾在外部程式聚會 TOOCON 中作為講者分享全文檢索基礎概念。"
+    ],
+    "Note": "<a target=\"_blank\" href=\"https://www.facebook.com/groups/toocon/posts/2860626204080231/\"><img class=\"img-fluid\" src=\"./img/project/toocon.jpg\"></a>"
+}

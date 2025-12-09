@@ -1,12 +1,10 @@
 package handler
 
 import (
-	"encoding/json"
 	"html/template"
-	"os"
 )
 
-type IndexSideProjects struct {
+type IndexSideProject struct {
 	Title   string
 	Image   string
 	Link    string
@@ -34,38 +32,23 @@ type IndexProject struct {
 	Content template.HTML
 }
 
-type IndexHandler struct {
-	templateData struct {
-		SiteName      string
-		BodyClass      string
-		Autobiography []template.HTML
-		Projects      []IndexProject
-		SideProjects  []IndexSideProjects
-		Skills        []IndexSkill
-		Conferences   []IndexConference
-	}
+type IndexData struct {
+	SiteName      string
+	BodyClass     string
+	Autobiography []template.HTML
+	Projects      []IndexProject
+	SideProjects  []IndexSideProject
+	Skills        []IndexSkill
+	Conferences   []IndexConference
 }
 
+type IndexHandler struct{}
+
 func (handler *IndexHandler) HandleTemplate(tmpl *template.Template) error {
-	indexFile, err := os.Create("./docs/index.html")
-	if err != nil {
-		return err
-	}
-	defer indexFile.Close()
-
-	data, err := os.ReadFile("./setting/index.json")
-	if err != nil {
-		return err
-	}
-
-	err = json.Unmarshal(data, &handler.templateData)
-	if err != nil {
-		return err
-	}
-
-	err = tmpl.ExecuteTemplate(indexFile, "index.html", handler.templateData)
-	if err != nil {
-		return err
-	}
-	return nil
+	return RenderTemplateFromJSON[IndexData](
+		"./setting/index.json",
+		"./docs/index.html",
+		"index.html",
+		tmpl,
+	)
 }

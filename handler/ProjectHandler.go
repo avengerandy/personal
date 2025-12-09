@@ -1,7 +1,6 @@
 package handler
 
 import (
-	"encoding/json"
 	"html/template"
 	"os"
 )
@@ -16,34 +15,22 @@ type Project struct {
 	Note      template.HTML
 }
 
-type ProjectHandler struct {
-	templateData struct {
-		Projects []Project
-	}
-}
+type ProjectHandler struct{}
 
 func (handler *ProjectHandler) HandleTemplate(tmpl *template.Template) error {
-	data, err := os.ReadFile("./setting/project.json")
-	if err != nil {
-		return err
-	}
+    files, err := os.ReadDir("./setting/projects")
+    if err != nil {
+        return err
+    }
 
-	err = json.Unmarshal(data, &handler.templateData)
-	if err != nil {
-		return err
-	}
-	for _, project := range handler.templateData.Projects {
-		projectFile, err := os.Create("./docs/project_" + project.Id + ".html")
-		if err != nil {
-			return err
-		}
+    for _, file := range files {
+        jsonPath := "./setting/projects/" + file.Name()
+        outputPath := "./docs/" + file.Name()[:len(file.Name())-5] + ".html" // .json
 
-		err = tmpl.ExecuteTemplate(projectFile, "project.html", project)
-		projectFile.Close()
-		if err != nil {
-			return err
-		}
-	}
+        if err := RenderTemplateFromJSON[Project](jsonPath, outputPath, "project.html", tmpl); err != nil {
+            return err
+        }
+    }
 
-	return nil
+    return nil
 }
