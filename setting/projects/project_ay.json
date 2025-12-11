@@ -1,0 +1,19 @@
+{
+    "Id": "ay",
+    "SiteName": "project - 巴哈姆特站內搜尋",
+    "BodyClass": "",
+    "Title": "AsiaYo 旅遊商品優化與維護",
+    "ImageSet": [
+        "./img/project/ay_index.png",
+        "./img/project/ay_02.png",
+        "./img/project/ay_03.png",
+        "./img/project/ay_04.png"
+    ],
+    "Content": [
+        "該平台提供飯店、郵輪、馬拉松等多樣商品，需在兼顧一致體驗的同時客製需求：",
+        "＊與商品相對應的旅客資料收集流程。",
+        "＊各種支付類型、情境的金流功能串接。",
+        "＊第三方 API 串接，面對同步量大、不穩定來源等挑戰。"
+    ],
+    "Note": "<a target=\"_blank\" href=\"https://asiayo.com/zh-tw/\">AsiaYo 網站</a>"
+}

@@ -6,6 +6,7 @@ import (
 
 type WorkEducation struct {
 	Title   []string
+	Logo    string
 	Content []string
 	Time    string
 }

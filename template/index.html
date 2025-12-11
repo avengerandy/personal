@@ -28,13 +28,13 @@
         <hr class="flex-grow-1">
     </div>
 
-    <!--project-->
+    <!--work project-->
     <div class="row padding-block">
         <div class="col-12">
-            <div class="text-center"><h2>Work Projects</h2></div>
+            <div class="text-center"><h2>Work Experience</h2></div>
         </div>
         {{range $Project := .Projects}}
-        <div class="col-6 col-md-3 project">
+        <div class="col-6 col-md-4 project">
             <a href="./project_{{$Project.Id}}.html">
                 <img class="img-fluid" src="{{$Project.Image}}"/>
                 <div class="hover-div justify-content-center">
@@ -47,7 +47,13 @@
         </div>
         {{end}}
     </div>
-    <hr>
+        <div class="d-flex align-items-center">
+        <hr class="flex-grow-1">
+        <a href="./experience.html">
+            <div class="text-center more-button flex-grow-0"></div>
+        </a>
+        <hr class="flex-grow-1">
+    </div>
 
     <!--side project-->
     <div class="row padding-block">

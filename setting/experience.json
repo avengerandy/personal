@@ -4,9 +4,24 @@
     "Works": [
         {
             "Title": [
+                "亞揪遊旅行社股份有限公司",
+                "AsiaYo 後端工程師"
+            ],
+            "Logo": "https://play-lh.googleusercontent.com/QnX155c2w1GfBsnRx6BOHTzppGaMz5xMoQnV45s3yHQoa7h-ZekiMExOZAhNvdSx2UE=w240-h480",
+            "Content": [
+                "＊實作 OTA 核心業務功能，金流串接、旅客資料收集、第三方合作串接等。",
+                "＊兼任 RD 與 SA 職責，並與其他職能工程師（FAE、QA、SRE）等合作。",
+                "＊參與敏捷開發（每日站會、user story、CI/CD），熟悉 testing 與 code review。",
+                "＊隨公司一同導入 AI 工具輔助開發，回饋其對於開發效率與品質的成效。"
+            ],
+            "Time": "2024-09 ~ Now"
+        },
+        {
+            "Title": [
                 "旺普網路資訊股份有限公司",
                 "巴哈姆特電玩資訊站 PHP 工程師"
             ],
+            "Logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/4e/e2/2d4ee2e8-fa3c-c3b2-a073-b1c734b968df/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/246x0w.webp",
             "Content": [
                 "主要負責社群網站、站內搜尋、推薦系統，有一年以上的全職兼職遠端經驗。根據公司的當前的人力配置，日常維護、新產品開發、舊產品優化、新技術研究等，皆在我的工作範疇中。",
                 "除了具備維護社群網站必要的 SEO、商業邏輯實現、基本網⾴安全、資料庫語法優化、版本控管外。⾼流量網站常⽤的 cahce、database partitioning、讀寫分離、Message queue 這類常⾒的架構也都有概念。同時兼職研究 Evolutionary Computation、Recommendation System、Information Retrieval 等領域，經⼿過的站內搜尋類型以中⽂為主、數據⼤⼩從數百⾄數千萬、內容包括新聞、論壇⽂章、專有名詞等。",
