@@ -66,11 +66,25 @@
     ],
     "Conferences": [
         {
+            "Title": "Text-Driven Image Cropping with Deep Learning and Genetic Algorithm",
+            "Authors": "陳庭宇 (Mazer)",
+            "Published": "PyCon TW 2025",
+            "Date": "06 September 2025",
+            "Link": "https://tw.pycon.org/2025/zh-hant/conference/talk/355"
+        },
+        {
+            "Title": "learning DLsite trend function by rankNet",
+            "Authors": "陳庭宇 (Mazer)",
+            "Published": "TOOCON #20",
+            "Date": "13 August 2024",
+            "Link": "https://gdg.community.dev/events/details/google-gdg-kaohsiung-presents-toocon-20/"
+        },
+        {
             "Title": "淺談全文檢索 inverted index and all that jazz",
             "Authors": "陳庭宇 (Mazer)",
             "Published": "TOOCON #12",
             "Date": "25 November 2023",
-            "Link": "https://www.facebook.com/groups/toocon/posts/2860626204080231/"
+            "Link": "https://gdg.community.dev/events/details/google-gdg-kaohsiung-presents-toocon-12/"
         },
         {
             "Title": "Parameter Setting of CMA-ES: A Numerical Study on CEC2019 100-Digit Challenge",
