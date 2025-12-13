@@ -40,16 +40,34 @@
     ],
     "SideProjects": [
         {
-            "Title": "rankNet",
-            "Image": "./img/project/sideProject_01.png",
-            "Link": "https://andy850701.pixnet.net/blog/post/576727348",
-            "Content": "A study about learning DLsite trend function by rankNet and its distribution shift."
+            "Title": "Recommendation Everything Independent",
+            "Image": "./img/project/sideProject_rei.png",
+            "Link": "https://github.com/avengerandy/REI",
+            "Content": "A lightweight, frontend‑only recommendation toolkit"
+        },
+        {
+            "Title": "Text2Focus",
+            "Image": "./img/project/sideProject_t2f.png",
+            "Link": "https://github.com/avengerandy/Text2Focus",
+            "Content": "Automatically crops images based on textual descriptions, highlighting key areas."
         },
         {
             "Title": "RewriteDagger",
             "Image": "./img/project/sideProject_02.png",
             "Link": "https://github.com/avengerandy/RewriteDagger",
             "Content": "A php test tool that mock anything without using any extensions."
+        },
+        {
+            "Title": "Personal Website Generator",
+            "Image": "./img/project/sideProject_pwg.png",
+            "Link": "https://github.com/avengerandy/personal",
+            "Content": "A simple static site generator for my personal website."
+        },
+        {
+            "Title": "rankNet",
+            "Image": "./img/project/sideProject_01.png",
+            "Link": "https://andy850701.pixnet.net/blog/post/576727348",
+            "Content": "A study about learning DLsite trend function by rankNet and its distribution shift."
         },
         {
             "Title": "chorus target detecion",
