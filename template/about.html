@@ -25,6 +25,14 @@
             </blockquote>
             {{end}}
         </div>
+        <div class="col-12" style="margin-top: 80px;">
+            <div class="text-center"><h2>Academic</h2></div>
+            {{range .AcademicAutobiography}}
+            <blockquote class="blockquote">
+                &emsp;&emsp;{{.}}
+            </blockquote>
+            {{end}}
+        </div>
     </div>
 </div>
 {{template "_footer" .}}

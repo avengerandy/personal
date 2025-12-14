@@ -5,10 +5,11 @@ import (
 )
 
 type AboutData struct {
-	SiteName            string
-	BodyClass           string
-	RecentAutobiography []template.HTML
-	PastAutobiography   []template.HTML
+	SiteName              string
+	BodyClass             string
+	RecentAutobiography   []template.HTML
+	PastAutobiography     []template.HTML
+	AcademicAutobiography []template.HTML
 }
 
 type AboutHandler struct{}
